@@ -1,0 +1,48 @@
+* {
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+/*Mobile Css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: block;
+}
+
+header {
+    background-color: rgb(86, 19, 148);
+    color: #333;
+    padding: 10px 20px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+}
+/*Larger View Css*/
+@media (min-width: 900px) {
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+    .navigation a {
+		display: block;
+	}
+
+
+}
