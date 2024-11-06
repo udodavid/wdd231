@@ -1,0 +1,25 @@
+[
+    {
+        "Family_name": "Udo",
+        "date_moved": "2019-11-12",
+        "Number_of_people": 3,
+        "Bishopric_Visit": true,
+        "Family_members": [
+            {
+                "name": "Udo David",
+                "gender": "Male",
+                "Birthdate": "1998-11-27"
+            },
+            {
+                "name": "Udo Victoria",
+                "gender": "Female",
+                "Birthdate": "1990-02-27"
+            },          
+            {
+                "name": "Udo Esther",
+                "gender": "Female",
+                "Birthdate": "1992-06-22"
+            }
+        ]
+    }
+]
