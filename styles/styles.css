@@ -120,56 +120,6 @@ button p {
     color: #eee;
 }
 
-/* 
-.flexbox2 {
-    margin: 10px;
-    border: 3px solid #333;
-    border-radius: 10px;
-}
-
-.flexbox2 h2 {
-    background-color: rgb(86, 19, 148);
-    text-align: center;
-    color: #eee;
-}
-.flexbox-container2 {
-    display: flex;
-    justify-content: center;
-}
-
-.flexbox-item2 {
-    width: 200px;
-    margin: 10px;
-    border: 3px solid #333;
-    background-color: #000;
-}
-
-.flexbox-item-01 {
-    min-height: 40px;
-    border-radius: 10px;
-}
-
-.flexbox-item-02 {
-    min-height: 40px;
-    border-radius: 10px;
-}
-
-.flexbox-item-03 {
-    min-height: 40px;
-    border-radius: 10px;
-}
-
-.flexbox-item2 P {
-    margin-top: 8px;
-    text-align: center;
-    color: #eee;
-} */
-
-/* .flexbox-container3 {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .main {
     margin-bottom: 100px;
     width: 100%;
