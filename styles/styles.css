@@ -175,31 +175,6 @@ button p {
     width: 100%;
 }
 
-/* .flexbox-item3 {
-    width: 200px;
-    margin-bottom: 10px;
-    border: 2px;
-    background-color: #611010;
-}
-
-.flexbox-item3 P {
-    margin-top: 8px;
-    text-align: center;
-    color: #eee;
-}
-
-.flexbox-item-004 p {
-    margin-top: 8px;
-    text-align: center;
-    color: #000;
-}
-
-.flexbox-item-006 p {
-    margin-top: 8px;
-    text-align: center;
-    color: #000;
-} */
-
 footer {
     background-color: #1b1ead;
     color: white;
@@ -324,52 +299,6 @@ header {
     align-items: center;
 }
 
-/* .flexbox-item-001 {
-    min-height: 40px;
-    min-width: 100%;
-    border-radius: 5px;
-    flex-grow: 1;
-}
-
-.flexbox-item-002 {
-    min-height: 40px;
-    min-width: 100%;
-    border-radius: 5px;
-    flex-grow: 1;
-}
-
-.flexbox-item-003 {
-    min-height: 40px;
-    min-width: 100%;
-    border-radius: 5px;
-    flex-grow: 1;
-}
-
-.flexbox-item-004 {
-    min-height: 40px;
-    min-width: 100%;
-    border-radius: 5px;
-    flex-grow: 1;
-    background-color: #eee;
-    border: 2px solid #c5c3c3;
-}
-
-.flexbox-item-005 {
-    min-height: 40px;
-    min-width: 100%;
-    border-radius: 5px;
-    flex-grow: 1;
-}
-
-.flexbox-item-006 {
-    min-height: 40px;
-    min-width: 100%;
-    border-radius: 5px;
-    flex-grow: 1;
-    background-color: #eee;
-    border: 2px solid #c5c3c3;
-} */
-
 /*Larger View Css*/
 @media (min-width: 900px) {
     .navigation {
@@ -418,16 +347,5 @@ header {
         margin-bottom: 10px;
         border: 2px;
     }
-
-    /* .flexbox-item-3 {
-        flex: 3;
-    } */
-	/*.navigation {
-		flex-direction: row;
-	}
-    .navigation a {
-		display: block;
-	}*/ 
-
 
 }
