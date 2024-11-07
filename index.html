@@ -33,12 +33,12 @@
         
         <a id="menu" href="#"></a>
         </div>
-        <nav>
+        <nav class="nav-links">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="chamber.html">Chamber</a></li>
-                <li><a href="https://github.com/udodavid">Github Profile</a></li>
-                <li><a href="www.linkedin.com/in/david-udo-j">Linkedin</a></li>
+                <li><a href="https://github.com/udodavid" target="_blank">Github Profile</a></li>
+                <li><a href="www.linkedin.com/in/david-udo-j" target="_blank">Linkedin</a></li>
             </ul>
         </nav>
     </header>
@@ -56,11 +56,22 @@
                 <h1>Lagos, Nigeria</h1>
                 <figure class="figure">
                     <img src="images/lagos.webp" alt="Lagos" class="img">
-                    <figcaption>Lagos</figcaption>
+                    <figcaption><h2>Lagos</h2></figcaption>
                 </figure>
             </div>
         </div>
-        <div class="flexbox2">
+        <section id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            
+            <div class="courses">
+                <button onclick="filterCourses('all')"> <p>All Courses</p></button>
+                <button onclick="filterCourses('CSE')"><p>CSE Courses</p></button>
+                <button onclick="filterCourses('WDD')"><p>WDD Courses</p></button>
+            </div>
+            <div id="course-list"></div>
+            <p class="total">Total Credits: <span id="total-credits">0</span></p>
+        </section>
+        <!-- <div class="flexbox2">
             <h2>Web and Computer Programming Caertificate</h2>
             <section class="flexbox-container2">
                 <div class="flexbox-item2 flexbox-item-01">
@@ -92,8 +103,7 @@
                 <div class="flexbox-item3 flexbox-item-006">
                     <p>WDD 231</p>
                 </div>
-            </section>
-        </div>
+            </section> -->
     </main>
 
     <footer>
