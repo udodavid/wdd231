@@ -5,7 +5,7 @@ const currentPage = window.location.pathname;
 const navLinks = document.querySelectorAll('.nav-links a');
 
 navLinks.forEach(link => {
-    if (currentPage === '/' || currentPage.endsWith('/index.html')){
+    if (currentPage === '/' || currentPage.endsWith('index.html')){
         if (link.getAttribute('href').includes('index.html')){
             link.classList.add('active');
         }
