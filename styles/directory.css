@@ -1,0 +1,323 @@
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    
+}
+.logo h1 {
+    text-align: center;
+    color: #eee;
+    margin-left: 15px;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 300px;
+}
+.hero-button {
+    position: absolute;
+    bottom: 20px;
+    left: 80%;
+    transform: translateX(-50%);
+    background-color: #004d66;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+#memberContainer {
+    margin: 10px 50px 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+#memberContainer button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+/* section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+} */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+    margin: 20px 50px 200px;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	flex-direction: column;
+    margin: 10px 50px 200px;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 90px;
+	max-width: 100%;
+}
+
+/*Card Style */
+.member-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Membership Level*/
+.member-card.member {
+    background-color: #f0f0f0; 
+    border-color: #c0c0c0;
+}
+
+.member-card.silver {
+    background-color: #e0e0e0; 
+    border-color: #a8a8a8;
+    box-shadow: 0 0 5px rgba(168, 168, 168, 0.5);
+}
+
+.member-card.gold {
+    background-color: #ffd700; 
+    border-color: #b8860b;
+    box-shadow: 0 0 10px rgba(184, 134, 11, 0.7);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .social-icons a:hover {
+    color: #ddd;
+  }
+
+/* Footer */
+footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer img {
+    width: 30px;
+    height: 20px;
+  }
+
+  #lastModified {
+    color: yellowgreen;
+  }
+
+
+/*Mobile Css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #004d66;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 0px;
+    color: #eee;
+    margin-left: 15px;
+    justify-content: right;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: yellow;
+    font-weight: bold;
+    border-bottom: 2px solid yellow;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 200;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "x";
+}
+
+/*Larger View Css*/
+@media (min-width: 900px) {
+
+    /* Header */
+    header {
+        background-color: #004d66;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo {
+        display: flex;
+        align-items: center;
+    }
+    header .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        justify-content: right;
+    }
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        justify-content: right;
+    }
+
+    .navigation a {
+        text-align: right;
+    }
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    nav {
+        width: 100%;
+    }
+
+    .hero {
+        position: relative;
+        text-align: center;
+        margin: 0px 50px 10px;
+    }
+
+}

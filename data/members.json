@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Company One",
+        "address": "12, Iju Road, Lagos State",
+        "phone": "234-901-413-7660",
+        "website": "https://companyone.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Company Two",
+        "address": "78 Agbado Road, Ogun State",
+        "phone": "234-814-322-5949",
+        "website": "https://companytwo.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Company Three",
+        "address": "78 Agbado Road, Ogun State",
+        "phone": "234-814-322-5949",
+        "website": "https://companythree.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Company Four",
+        "address": "78 Agbado Road, Ogun State",
+        "phone": "234-814-322-5949",
+        "website": "https://companyfout.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Company Five",
+        "address": "78 Agbado Road, Ogun State",
+        "phone": "234-814-322-5949",
+        "website": "https://companyfive.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Company Six",
+        "address": "78 Agbado Road, Ogun State",
+        "phone": "234-814-322-5949",
+        "website": "https://companysix.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Company Seven",
+        "address": "78 Agbado Road, Ogun State",
+        "phone": "234-814-322-5949",
+        "website": "https://companyseven.com",
+        "image": "images/lagos.webp",
+        "membershipLevel": 3
+    }
+
+]
