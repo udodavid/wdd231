@@ -52,14 +52,29 @@
             <div class="flexbox-item flexbox-item-1">
                 <div class="events">
                     <h3>Events</h3>
-                    <div id="events-content">Upcoming events will be displayed here...</div>
+                    <div id="events-content">
+                        <article>
+                            <h4>Annual Business Gala</h3>
+                            <p>December 15th, 2024 | Timbuktu Convention Center</p>
+                        </article>
+                        <article>
+                            <h4>Small Business Workshop</h3>
+                            <p>January 20th, 2025 | Virtual</p>
+                        </article>
+                    </div>
                 </div>
             </div>
             <div class="flexbox-item flexbox-item--2">
                 <div class="current-weather">
                     <h3>Current Weather</h3>
+                    <!-- Weather Section -->
                     <div class="weather-content">
-                        <img src="images/weather-icon.png" alt="Weather Icon">
+                        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <!-- <img src="images/weather-icon.png" alt="Weather Icon">
                         <div class="weather-details"> 
                             <p>75°F</p>
                             <p>Partly Cloudy</p>
@@ -68,7 +83,7 @@
                             <p>Humidity: 34%</p>
                             <p>Sunrise: 7:30 AM</p>
                             <p>Sunset: 9:59 PM</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -132,6 +147,7 @@
                 </div>
             </div>
         </div>
+        <div id="cards"></div>
     </main>
     <footer>
         <section class="social-icons">

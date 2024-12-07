@@ -272,14 +272,20 @@ nav {
         background-color: #004d66;
         color: #fff;
         padding: 10px 20px;
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: center;
     }
     header .logo {
-        display: flex;
+        display: block;
+        float: left;
         align-items: center;
     }
+
+    header .logo h1 {
+        float: right;
+    }
+    
     header .logo img {
         height: 50px;
         margin-right: 10px;

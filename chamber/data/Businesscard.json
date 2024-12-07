@@ -1,0 +1,26 @@
+[
+    {
+      "name": "UdoDavid's Tech",
+      "logo": "images/ceo.JPG",
+      "phone": "800-555-1234",
+      "address": "123 Gold Street",
+      "website": "http://goldcompany.com",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Jived and Co Company",
+      "logo": "images/ceo.JPG",
+      "phone": "800-555-5678",
+      "address": "456 Silver Avenue",
+      "website": "http://silvercompany.com",
+      "membershipLevel": "Silver"
+    },
+    {
+        "name": "Horns Overhaul Factory",
+        "logo": "images/ceo.JPG",
+        "phone": "800-555-5678",
+        "address": "456 Silver Avenue",
+        "website": "http://silvercompany.com",
+        "membershipLevel": "Gold"
+    }
+  ]

@@ -258,6 +258,38 @@ footer {
     transition: max-height .2s ease-out;
 }
 
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+}
+
+img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+
 /*Mobile Css*/
 * {
     margin: 0;
