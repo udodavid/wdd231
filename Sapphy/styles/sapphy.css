@@ -1,0 +1,29 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #5d5d5d;
+}
+
+p {
+    color: #666;
+}
+
+.highlight {
+    color: #FF5733;
+}
+
+.wireframe {
+    font-size: 14px;
+    color: #000;
+    background-color: #d3d3d3;
+    padding: 10px;
+    border: 1px solid #333;
+}

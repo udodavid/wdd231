@@ -136,3 +136,145 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 // Get the last modified date of the document and update the footer
 document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
 
+
+// Discovery JS
+// Lazy Load Images
+// document.addEventListener("DOMContentLoaded", () => {
+//   const lazyImages = document.querySelectorAll('img.lazy');
+//   const loadImages = () => {
+//       lazyImages.forEach((img) => {
+//           if (img.getBoundingClientRect().top < window.innerHeight) {
+//               img.src = img.dataset.src;
+//               img.classList.add('loaded');
+//           }
+//       });
+//   };
+
+//   window.addEventListener('scroll', loadImages);
+//   loadImages(); // Initial check in case images are already in view
+// });
+
+// // Last Visit Message
+// const lastVisitMessage = document.getElementById('lastVisitMessage');
+// const lastVisit = localStorage.getItem('lastVisit');
+// const currentTime = Date.now();
+// localStorage.setItem('lastVisit', currentTime);
+
+// if (!lastVisit) {
+//   lastVisitMessage.textContent = "Welcome! Let us know if you have any questions.";
+// } else {
+//   const timeDifference = currentTime - lastVisit;
+//   const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+//   if (daysDifference < 1) {
+//       lastVisitMessage.textContent = "Back so soon! Awesome!";
+//   } else {
+//       lastVisitMessage.textContent = `You last visited ${daysDifference} ${daysDifference === 1 ? 'day' : 'days'} ago.`;
+//   }
+// }
+
+// Discovery
+// document.addEventListener('DOMContentLoaded', () => {
+//   const messageContainer = document.getElementById('lastVisitMessage');
+//   const lastVisit = localStorage.getItem('lastVisit');
+//   const currentTime = Date.now();
+
+//   if (!lastVisit) {
+//       messageContainer.textContent = "Welcome! Let us know if you have any questions.";
+//   } else {
+//       const daysSinceLastVisit = Math.floor((currentTime - lastVisit) / (1000 * 60 * 60 * 24));
+//       if (daysSinceLastVisit < 1) {
+//           messageContainer.textContent = "Back so soon! Awesome!";
+//       } else {
+//           messageContainer.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? 'day' : 'days'} ago.`;
+//       }
+//   }
+
+//   // Update last visit time in localStorage
+//   localStorage.setItem('lastVisit', currentTime);
+// });
+
+// Calendar
+document.addEventListener('DOMContentLoaded', () => {
+  const monthSelect = document.getElementById('month-select');
+  const yearSelect = document.getElementById('year-select');
+  const calendarBody = document.getElementById('calendar-body');
+  const selectedDateDisplay = document.getElementById('selected-date');
+
+  const today = new Date();
+  let currentMonth = today.getMonth();
+  let currentYear = today.getFullYear();
+
+  // Populate month dropdown
+  const monthNames = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+  ];
+  monthNames.forEach((month, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.textContent = month;
+      if (index === currentMonth) option.selected = true;
+      monthSelect.appendChild(option);
+  });
+
+  // Populate year dropdown
+  const startYear = currentYear - 10;
+  const endYear = currentYear + 10;
+  for (let year = startYear; year <= endYear; year++) {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      if (year === currentYear) option.selected = true;
+      yearSelect.appendChild(option);
+  }
+
+  // Function to generate the calendar
+  function generateCalendar(month, year) {
+      calendarBody.innerHTML = ''; // Clear previous calendar
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      let day = 1;
+      for (let i = 0; i < 6; i++) { // Max 6 rows
+          const row = document.createElement('tr');
+          for (let j = 0; j < 7; j++) { // 7 columns
+              const cell = document.createElement('td');
+              if (i === 0 && j < firstDay) {
+                  cell.textContent = '';
+              } else if (day > daysInMonth) {
+                  cell.textContent = '';
+              } else {
+                  cell.textContent = day;
+                  cell.addEventListener('click', () => selectDate(day, month, year));
+                  day++;
+              }
+              row.appendChild(cell);
+          }
+          calendarBody.appendChild(row);
+          if (day > daysInMonth) break;
+      }
+  }
+  
+  // Handle date selection
+  function selectDate(day, month, year) {
+      document.querySelectorAll('td').forEach(cell => cell.classList.remove('selected'));
+      event.target.classList.add('selected');
+      const formattedDate = `${monthNames[month]} ${year}`;
+      selectedDateDisplay.textContent = `You selected: ${formattedDate}`;
+  }
+
+  // Event listeners for dropdowns
+  monthSelect.addEventListener('change', () => {
+      currentMonth = parseInt(monthSelect.value);
+      generateCalendar(currentMonth, currentYear);
+  });
+
+  yearSelect.addEventListener('change', () => {
+      currentYear = parseInt(yearSelect.value);
+      generateCalendar(currentMonth, currentYear);
+  });
+
+  // Generate calendar on page load
+  generateCalendar(currentMonth, currentYear);
+});
