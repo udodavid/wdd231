@@ -26,8 +26,103 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloom Capsule Collection</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <p>Please note that shipping takes 7-10 working days nationwide</p>
+            <div class="language-currency">
+                <span>EN</span> |
+                <span>NGN</span>
+            </div>
+        </header>
+    
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo"> 
+                <img src="images/Logo.webp" alt="">
+                <h2>Sapphy Array</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">SHOP</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="#">Women's Collection</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">ABOUT</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Mission</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <a href="#"><img src="profile-icon.png" alt="Profile" class="icon"></a>
+                <a href="cart.html"><img src="cart-icon.png" alt="Cart" class="icon"></a>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>BRAND NEW</h1>
+                <h2>Bloom Capsule Collection</h2>
+                <a href="#" class="btn">EXPLORE NOW</a>
+            </div>
+        </section>
+    
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <h3>Featured Products</h3>
+            <div class="products-container">
+                <!-- Placeholder for Products -->
+                <div class="product-card">
+                    <img src="images/pdf/Picture 1.jpg" alt="Product 1">
+                    <h4>Product Name</h4>
+                    <p>NGN 20,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/pdf/Picture 2.jpg" alt="Product 2">
+                    <h4>Product Name</h4>
+                    <p>NGN 25,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/pdf/Picture 3.jpg" alt="Product 3">
+                    <h4>Product Name</h4>
+                    <p>NGN 30,000</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com/udo_david" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/daudodavidsax" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> 🥇Udo David A.🥇Nigeria <img src="images/flag.webp" alt="">
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    </body>
+    <!-- <header>
         <div class="logo">
             <img src="images/Logo.png" alt="UdoDavid">
             <h1>Sapphy Array Fashion Store</h1>
@@ -102,5 +197,5 @@
 <h2>Testing</h2>
 <p>Testing will include accessibility compliance (WCAG), SEO best practices, and performance checks using tools like Google Lighthouse. HTML and CSS validation will also be performed to ensure the site functions properly across different browsers and devices.</p>
 </section>
-</body>
+</body> -->
 </html>

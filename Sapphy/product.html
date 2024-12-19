@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD231 - Course Home Page</title>
+        <meta name="author" content="UDO DAVID">
+        <meta property="og:title" content="Course Title">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://udodavid.github.io/wdd231/images/lagos.webp">
+        <meta property="og:url" content="https://udodavid.github.io/wdd231/index.html#">
+        <meta property="twitter:card" content="">
+        <!-- Non Essential, But Recomended -->
+        <meta property="og:description" content="WDD231 - Course Home Page">
+        <meta property="og:site_name" content="Course Title">
+        <meta name="twiter:image:alt" content="Alt text for image">
+        <!-- Non Essential, But Required for Analytics -->
+        <meta property="fb:app_id" content="your_app_id">
+        <meta name="twitter:site" content="@udodavid">
+        <!-- External Links -->
+        <link rel="stylesheet" href="styles/sapphy.css">
+        <script src="scripts/sapphy.js" defer></script>
+        <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Please note that shipping takes 7-10 working days nationwide</p>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="language-currency">
+                <span>EN</span> | <span>NGN</span>
+            </div>
+            <div class="profile">
+                <span>Temi Adebayo</span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Bloom Capsule Collection</a></li>
+        </ul>
+        <h3>Size</h3>
+        <ul>
+            <li>4</li>
+            <li>6</li>
+            <li>8</li>
+            <li>10</li>
+            <li>12</li>
+            <li>14</li>
+            <li>16</li>
+            <li>18</li>
+            <li>20</li>
+            <li>22</li>
+        </ul>
+        <h3>Price</h3>
+        <p>₦25,000.00 - ₦48,500.00</p>
+        <button class="filter-btn">Apply Filters</button>
+    </aside>
+
+    <!-- Main Product Section -->
+    <div class="product-list">
+        <div class="product" data-name="p-1">
+            <img src="images/pdf/Picture 1.jpg" alt="Maya">
+            <div class="price">₦43,500</div>
+            <h4>Maya</h4>
+        </div>
+        <div class="product" data-name="p-2">
+            <img src="images/pdf/Picture 2.jpg" alt="Mia-Rose">
+            <div class="price">₦48,500</div>
+            <h4>Mia-Rose</h4>
+        </div>
+        <div class="product" data-name="p-3">
+            <img src="images/pdf/Picture 3.jpg" alt="Ivy">
+            <div class="price">₦47,800</div>
+            <h4>Ivy</h4>
+        </div>
+        <div class="product" data-name="p-4">
+            <img src="images/pdf/Picture 4.jpg" alt="Eden">
+            <div class="price">₦40,500</div>
+            <h4>Eden</h4>
+        </div>
+        <div class="product" data-name="p-5">
+            <img src="images/Mockup Files/Shopping Bag Mockup.jpg" alt="Hazel">
+            <p>₦48,500</p>
+            <h4>Hazel</h4>
+        </div>
+        <div class="product" data-name="p-6">
+            <img src="images/Mockup Files/Tag Mockup.jpg" alt="AIKO">
+            <div class="price">₦32,500</div>
+            <h4>Dont Know</h4>
+        </div>
+    </div>
+
+    <div class="product-preview">
+        <!-- First Product Preview -->
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/pdf/Picture 1.jpg" alt="">
+            <h4>Hazel</h4>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p>
+            <div class="price">₦43,500</div>
+            <div class="buttons">
+                <a href="#" class="buy">Buy Now</a>
+                <a href="" class="cart">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Second Product Preview -->
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/pdf/Picture 2.jpg" alt="">
+            <h4>Hazel</h4>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p>
+            <div class="price">₦48,500</div>
+            <div class="buttons">
+                <a href="#" class="buy">Buy Now</a>
+                <a href="" class="cart">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Third Product Preview -->
+        <div class="preview" data-target="p-3">
+            <img src="images/pdf/Picture 3.jpg" alt="">
+            <h4>Ivy</h4>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p>
+            <div class="price">₦47,800</div>
+            <div class="buttons">
+                <a href="#" class="buy">Buy Now</a>
+                <a href="" class="cart">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Fourth Product Preview -->
+        <div class="preview" data-target="p-4">
+            <img src="images/pdf/Picture 4.jpg" alt="">
+            <h4>Eden</h4>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p>
+            <div class="price">₦40,500</div>
+            <div class="buttons">
+                <a href="#" class="buy">Buy Now</a>
+                <a href="" class="cart">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Fifth Product Preview -->
+        <div class="preview" data-target="p-5">
+            <img src="images/Mockup Files/Shopping Bag Mockup.jpg" alt="">
+            <h4>Hazel</h4>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p>
+            <div class="price">₦48,500</div>
+            <div class="buttons">
+                <a href="#" class="buy">Buy Now</a>
+                <a href="" class="cart">Add to Cart</a>
+            </div>
+        </div>
+
+        <!-- Sixth Product Preview -->
+        <div class="preview" data-target="p-6">
+            <img src="images/pdf/Picture 1.jpg" alt="">
+            <h4>Dont Know</h4>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem.</p>
+            <div class="price">₦32,500</div>
+            <div class="buttons">
+                <a href="#" class="buy">Buy Now</a>
+                <a href="" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Email: sapphyarray@gmail.com</p>
+        <p><a href="#faq">FAQs</a></p>
+        <p>Copyright © 2024 Sapphy Array | Designed with ❤️ by UdoDavid</p>
+    </footer>
+</body>
+</html>

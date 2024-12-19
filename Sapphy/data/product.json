@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Maya",
+      "sku": "81066185",
+      "category": "Dresses",
+      "price": "₦43,500",
+      "image": "images/maya.jpg",
+      "description": "Our best selling midi-length Maya Dress in four colours. The Maya Dress features our signature cold shoulder cut alongside a side drape and pearl details round the wrist.",
+      "additional_info": "Material: Crepe, Normal zipper, Fully lined dress, Cold shoulder cut",
+      "size": ["4", "6", "8", "10", "12", "14", "16", "18", "20", "22"]
+    },
+    {
+      "name": "Mia-Rose",
+      "sku": "81066186",
+      "category": "Dresses",
+      "price": "₦48,500",
+      "image": "images/mia-rose.jpg",
+      "description": "A stunning Mia-Rose dress with pearl accents and a flowing silhouette.",
+      "additional_info": "Material: Satin, Invisible zipper, Fully lined, Elegant design",
+      "size": ["4", "6", "8", "10", "12", "14", "16", "18", "20", "22"]
+    }
+  ]
+  

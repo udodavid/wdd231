@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD231 - Course Home Page</title>
+        <meta name="author" content="UDO DAVID">
+        <meta property="og:title" content="Course Title">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://udodavid.github.io/wdd231/images/lagos.webp">
+        <meta property="og:url" content="https://udodavid.github.io/wdd231/index.html#">
+        <meta property="twitter:card" content="">
+        <!-- Non Essential, But Recomended -->
+        <meta property="og:description" content="WDD231 - Course Home Page">
+        <meta property="og:site_name" content="Course Title">
+        <meta name="twiter:image:alt" content="Alt text for image">
+        <!-- Non Essential, But Required for Analytics -->
+        <meta property="fb:app_id" content="your_app_id">
+        <meta name="twitter:site" content="@udodavid">
+        <!-- External Links -->
+        <link rel="stylesheet" href="styles/sapphy.css">
+        <script src="scripts/sapphy.js" defer></script>
+        <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloom Capsule Collection</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <p>Please note that shipping takes 7-10 working days nationwide</p>
+            <div class="language-currency">
+                <span>EN</span> |
+                <span>NGN</span>
+            </div>
+        </header>
+    
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo"> 
+                <img src="images/Logo.webp" alt="">
+                <h2>Sapphy Array</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">SHOP</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Men's Collection</a></li>
+                        <li><a href="#">Women's Collection</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">ABOUT</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Mission</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <a href="#"><img src="profile-icon.png" alt="Profile" class="icon"></a>
+                <a href="#"><img src="cart-icon.png" alt="Cart" class="icon"></a>
+            </div>
+        </nav>
+    <header>
+        <h1>Temi Adebayo Fashion Store</h1>
+        <button id="viewCart">View Cart</button>
+    </header>
+    
+    <!-- Product Section -->
+    <main class="product-list">
+        <div class="product" data-id="1" data-name="Maya" data-price="43500">
+            <img src="images/maya.jpg" alt="Maya">
+            <p>₦43,500</p>
+            <h4>Maya</h4>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="Mia-Rose" data-price="48500">
+            <img src="images/mia-rose.jpg" alt="Mia-Rose">
+            <p>₦48,500</p>
+            <h4>Mia-Rose</h4>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: ₦<span id="cartTotal">0</span></p>
+            <button id="closeCart">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
