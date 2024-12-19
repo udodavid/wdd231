@@ -121,7 +121,12 @@ fetch('products.json')
         if(name == target){
           preview.classList.add('active');
         }
-      })
-    }
-  })
+      });
+    };
+  });
   
+  previewBox.forEach(close =>{
+    close.querySelector('.fa-times').onclick = () =>{
+      previewContainer.style.display = 'none';
+    };
+  });
